@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mobile_number: MyString
+  random_code: MyString
+  is_used: false
+
+two:
+  mobile_number: MyString
+  random_code: MyString
+  is_used: false

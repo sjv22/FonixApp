@@ -1,0 +1,2 @@
+class FonixAuth < ApplicationRecord
+end
