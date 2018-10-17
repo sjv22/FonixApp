@@ -1,0 +1,2 @@
+class FonixAuthController < ApplicationController
+end
