@@ -47,6 +47,7 @@ GEM
     archive-zip (0.11.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
+    bcrypt (3.1.12-x86-mingw32)
     bindex (0.5.0)
     bootsnap (1.3.2)
       msgpack (~> 1.0)
@@ -103,6 +104,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.5-x86-mingw32)
       mini_portile2 (~> 2.3.0)
+    phonelib (0.6.26)
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.5)
@@ -121,6 +123,10 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.2.1)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.2)
+      actionpack (~> 5.x, >= 5.0.1)
+      actionview (~> 5.x, >= 5.0.1)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -171,6 +177,7 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.1.19)
       execjs (>= 0.3.0, < 3)
+    wdm (0.1.1)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -181,11 +188,13 @@ GEM
     websocket-extensions (0.1.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    zensend (0.0.2)
 
 PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
@@ -194,15 +203,19 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   duktape
   jbuilder (~> 2.5)
+  phonelib
   puma (~> 3.11)
   rails (~> 5.2.1)
+  rails-controller-testing
   sass-rails (~> 5.0)
   selenium-webdriver
   sqlite3
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
+  wdm (>= 0.1.0)
   web-console (>= 3.3.0)
+  zensend
 
 RUBY VERSION
    ruby 2.3.3p222
