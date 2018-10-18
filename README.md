@@ -1,24 +1,38 @@
-# README
+# Fonix zensend API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
 
-Things you may want to cover:
+ruby 2.3.3 & Rails 5.2.1
 
-* Ruby version
+## Gems Used
 
-* System dependencies
+1. zensend
+2. phonelib
 
-* Configuration
+## Install dependencies
 
-* Database creation
+```$ cd FonixApp```
 
-* Database initialization
+```$ bundle install```
 
-* How to run the test suite
+## Database Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+```$ cd FonixApp```
 
-* Deployment instructions
+```$ rake db:create```
 
-* ...
+```$ rake db:migrate```
+
+## Access zensend API 
+
+Add your zensend api key in app/helpers/authentication_helper.rb
+
+## To run tests
+
+```Not implemeted yet```
+
+## To run the application 
+
+```$ cd FonixApp```
+
+```$ rails server```
