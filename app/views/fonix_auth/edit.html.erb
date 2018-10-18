@@ -1,0 +1,25 @@
+<h2>Fonix API</h2><br>
+<p>Welcome to Fonix API Dashboard</p>
+
+<%- if flash[:error] %>
+  <div class='alert alert-danger'><%= flash[:error] %></div>
+<% elsif flash[:success] %>
+  <div class='alert alert-success'><%= flash[:success] %></div>
+<% end %>
+
+<div class="container">
+
+<%= form_for @fonix_auth, method: :patch do |f| %>
+    <div id="verifyToken" class='form-group'>
+      <%= f.label :token %>
+      <%= f.text_field :random_code, value: "", class: 'form-control', placeholder: 'Enter your token' %>
+    </div>
+
+    <div class='form-group'>
+      <%= f.submit 'Verify Token', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+
+</div>
+
+<%= link_to 'Click here to log out.', logout_path %>
